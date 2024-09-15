@@ -21,7 +21,7 @@ public class AgileBootConfigTest {
 
     @Test
     public void testConfig() {
-        String fileBaseDir = "D:\\agileboot\\profile";
+        String fileBaseDir = "E:\\agileboot\\profile";
 
         Assertions.assertEquals("AgileBoot", config.getName());
         Assertions.assertEquals("1.0.0", config.getVersion());

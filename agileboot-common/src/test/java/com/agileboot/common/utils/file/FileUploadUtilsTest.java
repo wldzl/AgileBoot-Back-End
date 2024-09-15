@@ -110,7 +110,7 @@ class FileUploadUtilsTest {
     @Test
     void getFileAbsolutePath() {
         AgileBootConfig agileBootConfig = new AgileBootConfig();
-        agileBootConfig.setFileBaseDir("D:\\agileboot");
+        agileBootConfig.setFileBaseDir("E:\\agileboot");
 
         String fileAbsolutePath = FileUploadUtils.getFileAbsolutePath(UploadSubDir.AVATAR_PATH, "test.jpg");
 

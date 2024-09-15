@@ -43,6 +43,7 @@
         <com.google.guava.version>31.0.1-jre</com.google.guava.version>
         <springdoc-openapi-ui.version>1.6.14</springdoc-openapi-ui.version>
         <mysql-connector-java>8.0.31</mysql-connector-java>
+        <mariadb-connector-java>3.4.1</mariadb-connector-java>
         <spring.boot.version>2.7.10</spring.boot.version>
         <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>2.5</maven.surefire.plugin.version>
@@ -144,6 +145,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mariadb.jdbc</groupId>
+                <artifactId>mariadb-java-client</artifactId>
+                <version>${mariadb-connector-java}</version>
             </dependency>
 
             <!-- collections工具类 -->
