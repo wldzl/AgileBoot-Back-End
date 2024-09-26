@@ -49,19 +49,19 @@ public class CodeGenerator {
         // 默认读取application-dev yml中的master数据库配置
 //        JSON ymlJson = JSONUtil.parse(new Yaml().load(ResourceUtil.getStream("application-dev.yml")));
 
-        String databaseUrl = "jdbc:mysql://localhost:33067/agileboot-pure";
+        String databaseUrl = "jdbc:mariadb://192.168.31.14:3306/paiban";
         String username = "root";
-        String password = "12345";
+        String password = "123456";
 
         CodeGenerator generator = CodeGenerator.builder()
             .databaseUrl(databaseUrl)
             .username(username)
             .password(password)
-            .author("valarchie")
+            .author("eric.deng")
             //生成的类 放在orm子模块下的/target/generated-code目录底下
             .module("/agileboot-orm/target/generated-code")
             .parentPackage("com.agileboot")
-            .tableName("sys_menu")
+            .tableName("ban_sch")
             // 决定是否继承基类
             .isExtendsFromBaseEntity(true)
             .build();
